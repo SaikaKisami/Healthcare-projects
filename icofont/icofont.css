@@ -33,9 +33,9 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
-.icofont-building-alt:before
+.icofont-user:before
 {
-  content: "\e98a";
+  content: "\ed05";
 }
 
 .icofont-doctor:before
@@ -43,49 +43,19 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ec19";
 }
 
-.icofont-user:before
-{
-  content: "\ed05";
-}
-
-.icofont-facebook:before
-{
-  content: "\ed37";
-}
-
-.icofont-google-plus:before
-{
-  content: "\ed43";
-}
-
-.icofont-twitter:before
-{
-  content: "\ed7a";
-}
-
-.icofont-vimeo:before
-{
-  content: "\ed7f";
-}
-
-.icofont-pinterest:before
-{
-  content: "\ed5d";
-}
-
-.icofont-paper-plane:before
-{
-  content: "\efb4";
-}
-
-.icofont-ui-call:before
-{
-  content: "\ec46";
-}
-
 .icofont-doctor-alt:before
 {
   content: "\ec18";
+}
+
+.icofont-hospital:before
+{
+  content: "\ec22";
+}
+
+.icofont-stethoscope:before
+{
+  content: "\ec33";
 }
 
 .icofont-read-book:before
@@ -93,14 +63,9 @@ url("./fonts/icofont.woff") format("woff");
   content: "\eaeb";
 }
 
-.icofont-duotone.icofont-book:before
+.icofont-book:before
 {
-  content: "\13acd";
-}
-
-.icofont-duotone.icofont-book:after
-{
-  content: "\13acc";
+  content: "\ead2";
 }
 
 .icofont-notebook:before
@@ -108,9 +73,19 @@ url("./fonts/icofont.woff") format("woff");
   content: "\efaa";
 }
 
+.icofont-handshake-deal:before
+{
+  content: "\e96f";
+}
+
 .icofont-heart-eyes:before
 {
   content: "\eafb";
+}
+
+.icofont-support:before
+{
+  content: "\ecfa";
 }
 
 .icofont-users:before
@@ -131,21 +106,6 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-ui-user-group:before
 {
   content: "\ec8d";
-}
-
-.icofont-drug:before
-{
-  content: "\ec1b";
-}
-
-.icofont-nurse-alt:before
-{
-  content: "\ec28";
-}
-
-.icofont-tooth:before
-{
-  content: "\ec3c";
 }
 
 .icofont-quote-left:before
@@ -198,9 +158,59 @@ url("./fonts/icofont.woff") format("woff");
   content: "\eab9";
 }
 
+.icofont-facebook:before
+{
+  content: "\ed37";
+}
+
+.icofont-google-plus:before
+{
+  content: "\ed43";
+}
+
+.icofont-twitter:before
+{
+  content: "\ed7a";
+}
+
+.icofont-vimeo:before
+{
+  content: "\ed7f";
+}
+
+.icofont-pinterest:before
+{
+  content: "\ed5d";
+}
+
+.icofont-paper-plane:before
+{
+  content: "\efb4";
+}
+
+.icofont-ui-call:before
+{
+  content: "\ec46";
+}
+
 .icofont-ui-clock:before
 {
   content: "\ec4e";
+}
+
+.icofont-drug:before
+{
+  content: "\ec1b";
+}
+
+.icofont-nurse-alt:before
+{
+  content: "\ec28";
+}
+
+.icofont-tooth:before
+{
+  content: "\ec3c";
 }
 
 [class^="icofont-"].icofont-duotone,

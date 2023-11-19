@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/preloader.css" />
   <link rel="stylesheet" type="text/css" href="./icofont/icofont.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
@@ -22,14 +24,20 @@
         extend: {
           colors: {
             primarily: '#1a76d1',
-          } 
+            icon: '#1a76d1'
+          },
+          fontFamily: {
+            'basicfont': ['Poppins', 'sans-serif']
+          }
         }
       }
     }
   </script>
+  <style>
+  </style>
 </head>
 
-<body>
+<body class="font-basicfont">
 
   <!-- Preloader -->
   <div id="preload" class="preloader">
@@ -67,23 +75,23 @@
           <ul
             class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="#" class="block py-2 px-3 text-primarily hover:text-blue-600 rounded md:border-0 md:p-0">
+              <a href="#" class="block py-2 px-3 text-primarily font-semibold hover:text-blue-600 rounded md:border-0 md:p-0">
                 <i class="icofont icofont-user icofont-lg"></i> I am a Patient</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-primarily hover:text-blue-600 rounded md:border-0 md:p-0">
+              <a href="#" class="block py-2 px-3 text-primarily font-semibold hover:text-blue-600 rounded md:border-0 md:p-0">
                 <i class="icofont icofont-user icofont-lg"></i> I am a Family Member</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-primarily hover:text-blue-600 rounded md:border-0 md:p-0">
+              <a href="#" class="block py-2 px-3 text-primarily font-semibold hover:text-blue-600 rounded md:border-0 md:p-0">
                 <i class="icofont icofont-doctor icofont-lg"></i> I am a Doctor</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-primarily hover:text-blue-600 rounded md:border-0 md:p-0">
+              <a href="#" class="block py-2 px-3 text-primarily font-semibold hover:text-blue-600 rounded md:border-0 md:p-0">
                 <i class="icofont icofont-doctor icofont-lg"></i> I am a Pharmacist</a>
             </li>
             <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              <!-- <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
                 class="flex flex-row items-center py-2 px-3 text-primarily hover:text-blue-600 rounded md:border-0 md:p-0">Collaborate
                 With
                 US
@@ -91,9 +99,9 @@
                   viewBox="0 0 10 6" style="margin-left: 10px; color: gray;">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="m1 1 4 4 4-4" />
-                </svg></button>
+                </svg></button> -->
               <!-- Dropdown menu -->
-              <div id="dropdownNavbar"
+              <!-- <div id="dropdownNavbar"
                 class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
@@ -142,7 +150,92 @@
                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign
                     out</a>
                 </div>
-              </div>
+              </div> -->
+
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center font-primary text-primarily justify-between font-semibold  w-full py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+                >
+                  Collaborate With Us
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- <button
+                  href="#"
+                  class="dropdown-toggle nav-link"
+                  data-dropdown-toggle="dropdown"
+                >
+                  <span class="user-img"> Collaborate With Us </span>
+              </button> -->
+              
+                <div
+                  id="dropdownNavbar"
+                  class="z-30 hidden rounded-lg border-gray-100 shadow bg-white text-sm font-bold text-gray-600 space-y-2 py-3 px-2 block"
+                >
+                  <a
+                    class="block bg-white hover:bg-gray-100 px-4 hover:text-blue-500"
+                    href="/collaberate/dpn"
+                    ><i class="icofont icofont-doctor"></i> Doctors, Pharmacists
+                    And Nurses</a
+                  >
+                  <a
+                    class="block bg-white hover:bg-gray-100 px-4 hover:text-blue-500"
+                    href="/collaberate/fdf"
+                    ><i class="icofont icofont-doctor-alt"></i> Find Doctors
+                    Financing</a
+                  >
+                  <a
+                    class="block bg-white hover:bg-gray-100 px-4 hover:text-blue-500"
+                    href="/collaberate/hc"
+                    ><i class="icofont icofont-hospital"></i> Hospitals and
+                    Clinics</a
+                  >
+                  <a
+                    class="block bg-white hover:bg-gray-100 px-4 hover:text-blue-500"
+                    href="/collaberate/NominateDoctor"
+                    ><i class="icofont icofont-stethoscope"></i> Nominate
+                    Doctor</a
+                  >
+                  <a
+                    class="block bg-white hover:bg-gray-100 px-4 hover:text-blue-500"
+                    href="/collaberate/rdk"
+                    ><i class="icofont icofont-read-book"></i> Request your
+                    Digital Kit</a
+                  >
+                  <a
+                    class="block bg-white hover:bg-gray-100 px-4 hover:text-blue-500"
+                    href="/collaberate/rsk"
+                    ><i class="icofont icofont-book"></i> Request your Starter
+                    Kit</a
+                  >
+                  <a
+                    class="block bg-white hover:bg-gray-100 px-4 hover:text-blue-500"
+                    href="/collaberate/syh"
+                    ><i class="icofont icofont-notebook"></i> Share Your
+                    Telehealth Story</a
+                  >
+                  <a
+                    class="block bg-white hover:bg-gray-100 px-4 hover:text-blue-500"
+                    href="/collaberate/wwu"
+                    ><i class="icofont icofont-handshake-deal"></i> Work With
+                    Us</a
+                  >
+                </div>
             </li>
           </ul>
         </div>
@@ -158,7 +251,7 @@
         </select>
 
         <div class="flex flex-row items-center text-gray-500">
-          <i class=" icofont-add-users icofont-1x"></i>
+          <i class=" icofont-building-alt icofont-2x"></i>
           <!-- <i class="icofont-building-alt icofont-2x"></i> -->
           <div class="flex flex-col items-left text-blue-600 ml-2">
             <div>Contact</div>
@@ -166,62 +259,394 @@
           </div>
         </div>
         <button type="button"
-          class="text-primarily hover:text-white border border-2 border-primarily hover:bg-primarily focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-[4px] text-sm px-5 py-2.5 text-center">SIGNIN
+        style="border-width: 2px;" class="border  border-primarily rounded rounded-2 bg-white text-primarily items-center justify-center font-primary font-bold border- p-3 hover:bg-primarily hover:text-white  header-login ">SIGNIN
           / SIGNUP</button>
       </div>
   </nav>
 
   <!-- Slider -->
 
+  <section class="relative">
+    <div id="slider" class="z-0 relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative overflow-hidden md:h-[650px]">
+        <!-- Item 1 -->
+        <div class="hidden duration-900 ease-in-out" data-carousel-item>
+          <img src="./images/slider/slider.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./images/slider/slider2.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./images/slider/slider3.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+      </div>
+      <!-- Slider controls -->
+      <!-- <button type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primarily hover:bg-[#2C2D3F] hover:text-white group-focus:outline-none transition-all">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primarily hover:bg-[#2C2D3F] hover:text-white group-focus:outline-none transition-all">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button> -->
 
-  <div id="slider" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative overflow-hidden md:h-[600px]">
-      <!-- Item 1 -->
-      <div class="hidden duration-900 ease-in-out" data-carousel-item>
-        <img src="./images/slider/slider.png"
-          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      
+
+    </div>
+    <div class="absolute w-full top-[25vh] bg-transparent dark:bg-gray-900 z-[999]">
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primarily  group-hover:bg-[#757575]  group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primarily dark:bg-gray-800/30 group-hover:bg-[#757575]  group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="sr-only">Next</span>
+          </span>
+      </button>
+      <div class="pt-4 px-4 mx-auto max-w-screen-xl text-center lg:py-4 lg:px-12">
+        <h1
+          class="mb-4 text-4xl font-[900] tracking-tighter leading-none text-white md:text-4xl lg:text-[48px] dark:text-white"
+          style="-webkit-text-stroke: 2px #4074b5; word-spacing: 1px;">
+          Search Doctor, Make an Appointment</h1>
+        <p class="mb-8 text-lg font-[900] text-white tracking-tighter lg:text-[24px] sm:px-16 xl:px-48 dark:text-gray-400"
+          style="-webkit-text-stroke: 2px #4074b5;">Discover the best doctors, clinic & hospital the city nearest to
+          you.</p>
       </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="./images/slider/slider2.png"
-          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="./images/slider/slider3.png"
-          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      <div class="flex flex-row justify-center">
+        <form class="flex items-center space-x-3">
+          <label for="simple-search" class="sr-only">Search</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-[18px] h-[24px] text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 21">
+                <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                  <path d="M8 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                  <path
+                    d="M13.8 12.938h-.01a7 7 0 1 0-11.465.144h-.016l.141.17c.1.128.2.252.3.372L8 20l5.13-6.248c.193-.209.373-.429.54-.66l.13-.154Z" />
+                </g>
+              </svg>
+            </div>
+            <input type="text" id="simple-search"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search Location" required>
+          </div>
+          <div class="relative w-[25vw]">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-[20px] h-[20px] text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="text" id="simple-search"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search Doctors, Clinics, Hospitals, Diseases Etc" required>
+          </div>
+          <button type="submit"
+            class="p-2.5 ms-2 text-sm text-white bg-primarily rounded-md border border-primarily hover:bg-primarily focus:ring-2 focus:outline-none focus:ring-blue-500 dark:bg-blue-600 dark:hover:bg-primarily dark:focus:ring-blue-800">
+            <svg class="w-[20px] h-[20px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </form>
+
       </div>
     </div>
-    <!-- Slider controls -->
-    <button type="button"
-      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer focus:outline-none"
-      data-carousel-prev>
-      <span
-        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primarily hover:bg-[#2C2D3F] hover:text-white group-focus:outline-none transition-all">
-        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5 1 1 5l4 4" />
-        </svg>
-        <span class="sr-only">Previous</span>
-      </span>
-    </button>
-    <button type="button"
-      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-      data-carousel-next>
-      <span
-        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primarily hover:bg-[#2C2D3F] hover:text-white group-focus:outline-none transition-all">
-        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="m1 9 4-4-4-4" />
-        </svg>
-        <span class="sr-only">Next</span>
-      </span>
-    </button>
-  </div>
+  </section>
 
+  <section class="relative mx-auto px-[20vw] mt-[-90px] mb-[100px] z-50">
+    <div class="flex flex-row justify-center grid grid-cols-4 gap-8">
+      <div class="relative px-10 py-[50px] text-white bg-primarily break-words rounded-md">
+        <a href="#">
+          <h1 class="text-xl font-semibold mb-5">E-Consultancy</h1>
+          <p class="font-medium">You can get an initial visit or a second opinion from a specialist.</p>
+        </a>
+        <div class="absolute bottom-[-20px] right-[-20px] text-white opacity-20">
+          <svg xmlns="http://www.w3.org/2000/svg" height="90px" viewBox="0 0 640 512" fill="currentColor">
+            <path
+              d="M0 48C0 21.5 21.5 0 48 0H368c26.5 0 48 21.5 48 48V96h50.7c17 0 33.3 6.7 45.3 18.7L589.3 192c12 12 18.7 28.3 18.7 45.3V256v32 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H576c0 53-43 96-96 96s-96-43-96-96H256c0 53-43 96-96 96s-96-43-96-96H48c-26.5 0-48-21.5-48-48V48zM416 256H544V237.3L466.7 160H416v96zM160 464a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm368-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM176 80v48l-48 0c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V192h48c8.8 0 16-7.2 16-16V144c0-8.8-7.2-16-16-16H240V80c0-8.8-7.2-16-16-16H192c-8.8 0-16 7.2-16 16z" />
+          </svg>
+        </div>
+      </div>
+      <div class="relative px-10 py-[50px] text-white bg-primarily break-words rounded-md">
+        <a href="#">
+          <h1 class="text-xl font-semibold mb-5">Find your Clinic</h1>
+          <p class="font-medium">You can receive medical advice and treatment without visiting in person.</p>
+        </a>
+        <div class="absolute bottom-[-20px] right-[-20px] text-white opacity-20">
+          <i class="icofont-prescription icofont-6x"></i>
+        </div>
+      </div>
+      <div class="relative px-10 py-[50px] text-white bg-primarily break-words rounded-md">
+        <a href="#">
+          <h1 class="text-xl font-semibold mb-5">Appointment</h1>
+          <p class="font-medium">You can receive medical care from the comfort of your own home.</p>
+        </a>
+        <div class="absolute bottom-[-20px] right-[-20px] text-white opacity-20">
+          <i class="icofont-handshake-deal icofont-6x"></i>
+        </div>
+      </div>
+      <div class="relative px-10 py-[50px] text-white bg-primarily break-words rounded-md">
+        <a href="#">
+          <h1 class="text-xl font-semibold mb-5">What does it cost?</h1>
+          <p class="font-medium">You can be provided the best treatment in reasonable price.</p>
+        </a>
+        <div class="absolute bottom-[-20px] right-[-20px] text-white opacity-20">
+          <i class="icofont-ui-clock icofont-6x"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 text-center">
+      <div class="max-w-screen-md mx-auto mb-8 lg:mb-16">
+        <h2 class="mb-4 text-4xl tracking-tight font-[700] text-gray-700 dark:text-white">Why Doctor IN-HOME?</h2>
+        <img src="./images/section-img.png" class="mx-auto my-5" />
+        <p class="text-gray-500 sm:text-md dark:text-gray-400">“Embark on a healthcare journey like never before with
+          our cutting-edge telehealth services. Designed to cover the unmet needs of real patients, our platform ensures
+          integrated care, offering comprehensive coverage to the entire population of Bahrain. With a specialized focus
+          on pathology-grouped patients, we provide tailored solutions to prioritize your well-being. Welcome to the
+          future of healthcare, where quality care is accessible and personalized. Join us today for a healthier
+          tomorrow”</p>
+      </div>
+      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div class="flex flex-row space-x-3">
+          <div
+            class="flex justify-center text-icon items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <i class="icofont-heart-eyes icofont-3x"></i>
+          </div>
+          <div class="text-left">
+            <a href="#" class="hover:text-primarily text-gray-700 hover:text-primarily transition-all">
+              <h3 class="mb-2 text-xl font-semibold dark:text-white">Designed to cover unmet needs of real
+                patients:</h3>
+              <p class="text-gray-500 dark:text-gray-400">“we provide personalized healthcare”</p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-3">
+          <div
+            class="flex justify-center text-icon items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <i class="icofont-support icofont-3x"></i>
+          </div>
+          <div class="text-left">
+            <a href="#" class="hover:text-primarily text-gray-700 hover:text-primarily transition-all">
+              <h3 class="mb-2 text-xl font-semibold dark:text-white">Designed to support integrated chain
+                of
+                care:</h3>
+              <p class="text-gray-500 dark:text-gray-400">“we help boost self-referral of patients to specialists”</p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-3">
+          <div
+            class="flex justify-center text-icon items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <i class="icofont-users icofont-3x"></i>
+          </div>
+          <div class="text-left">
+            <a href="#" class="hover:text-primarily text-gray-700 hover:text-primarily transition-all">
+              <h3 class="mb-2 text-xl font-semibold dark:text-white">Designed to cover the full population
+                of Bahrain:</h3>
+              <p class="text-gray-500 dark:text-gray-400">“we provide a tested service of care scalable and secure”</p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-3">
+          <div
+            class="flex justify-center text-icon items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <i class="icofont-prescription icofont-3x"></i>
+          </div>
+          <div class="text-left">
+            <a href="#" class="hover:text-primarily text-gray-700 hover:text-primarily transition-all">
+              <h3 class="mb-2 text-xl font-semibold dark:text-white">Designed to avoid waiting lists and
+                uncertainty:</h3>
+              <p class="text-gray-500 dark:text-gray-400">“we link patients, health providers, caregivers, caretakers
+                and
+                family” </p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-3">
+          <div
+            class="flex justify-center text-icon items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <i class="icofont-stopwatch icofont-3x"></i>
+          </div>
+          <div class="text-left">
+            <a href="#" class="hover:text-primarily text-gray-700 hover:text-primarily transition-all">
+              <h3 class="mb-2 text-xl font-semibold dark:text-white">Designed to attend in-time:</h3>
+              <p class="text-gray-500 dark:text-gray-400">“we permit in-time and coordinated intervention”</p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-3">
+          <div
+            class="flex justify-center text-icon items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <i class="icofont-ui-user-group icofont-3x"></i>
+          </div>
+          <div class="text-left">
+            <a href="#" class="text-gray-700 hover:text-primarily transition-all">
+              <h3 class="mb-2 text-xl font-semibold dark:text-white">Designed with pathology grouped
+                patients:</h3>
+            </a>
+            <p class="text-gray-500 dark:text-gray-400">“we attend by clusters of patients”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative dark:bg-gray-900 py-[100px]"
+    style="background-image: url(./images/client-bg.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="absolute w-full h-full top-0 bg-[#007aff] bg-opacity-60"></div>
+    <div class="relative max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+      <dl class="grid max-w-screen-lg gap-8 mx-auto text-white sm:grid-cols-4 dark:text-white">
+        <div class="flex flex-row space-x-8">
+          <div class="flex flex-row items-center">
+            <div class="rounded-full border-white border-2 p-4">
+              <i class="icofont-doctor icofont-2x ml-1"></i>
+            </div>
+          </div>
+          <div class="flex flex-col items-center w-full" style="margin-left: 0px !important;">
+            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">4319</dt>
+            <dd class="font-light dark:text-gray-400">
+              <p>licensed</p>
+              <p>Medical Practitioners</p>
+            </dd>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-3">
+          <div class="flex flex-row items-center">
+            <div class="rounded-full border-white border-2 p-4">
+              <i class="icofont-drug icofont-2x ml-1"></i>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">1650</dt>
+            <dd class="font-light dark:text-gray-400">
+              <p>licensed<br>Parmacist List</p>
+            </dd>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-3">
+          <div class="flex flex-row items-center">
+            <div class="rounded-full border-white border-2 p-4">
+              <i class="icofont-nurse-alt icofont-2x ml-1"></i>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">6583</dt>
+            <dd class="font-light dark:text-gray-400">
+              <p>licensed<br>Nurse List</p>
+            </dd>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-3">
+          <div class="flex flex-row items-center">
+            <div class="rounded-full border-white border-2 p-4">
+              <i class="icofont-tooth icofont-2x ml-1"></i>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">1112</dt>
+            <dd class="font-light dark:text-gray-400">
+              <p>licensed<br>Dental Practitioners</p>
+            </dd>
+          </div>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 text-center">
+      <div class="max-w-screen-md mx-auto mb-8 lg:mb-16">
+        <h2 class="mb-4 text-4xl tracking-tight font-[700] text-gray-700 dark:text-white">Welcome to the future</h2>
+        <img src="./images/section-img.png" class="mx-auto my-5" />
+        <p class="text-gray-500 sm:text-md dark:text-gray-400 mx-32">Welcome to a new era in healthcare, where access to
+          top-notch medical services is just a click away.</p>
+      </div>
+      <div
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class="mt-4 md:mt-0 text-left">
+          <h2 id="whoweare" class="mb-4 text-2xl tracking-tight font-semibold text-gray-700 dark:text-white">Who We Are
+          </h2>
+          <p class="mb-6 font-light text-gray-500 md:text-md dark:text-gray-400">We are a pioneering company dedicated
+            to ushering in the future of healthcare, and our mission is to bring personalized, universal coverage of
+            telehealth services to you. In our world, the future of health is now in your home.<br> We believe that
+            quality healthcare should know no boundaries, and that's why we've harnessed the power of technology to
+            provide comprehensive, accessible, and convenient healthcare solutions.<br> Our commitment to your
+            well-being is unwavering, and we're excited to be your trusted partner in this healthcare revolution.</p>
+          <p class="mb-6 font-light text-gray-500 md:text-md dark:text-gray-400">Join us as we embark on a journey to a
+            healthier and brighter tomorrow, where the best in healthcare is
+            always within your reach.</p>
+          <a href="#"
+            class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+            Get started
+            <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="relative">
+          <img class="w-full" src="./images/video-bg.jpg" alt="dashboard image">
+          <a href="#" class="absolute top-[40%] left-[45%] text-white bg-primarily rounded-full p-5  pulse">
+            <i class="icofont-ui-play icofont-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative dark:bg-gray-900 py-[100px]"
+    style="background-image: url(./images/call-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="absolute w-full h-full top-0 bg-[#007aff] bg-opacity-60"></div>
+    <div class="relative">
+      <div class="max-w-screen-md mx-auto text-center text-white mb-8 lg:mb-16">
+        <h2 class="mb-10 text-4xl tracking-tight font-[700] dark:text-white">Do you need Emergency Medical Care?</h2>
+        <p class="sm:text-md dark:text-gray-400 mx-32">The Emergency Medical Services are highly responsive to all emergency calls and requests. Simply dial the toll-free number 999 from any phone to call for ambulance services.</p>
+        <p class="sm:text-md dark:text-gray-400 mx-32 mt-5">You can also have a 1:1 E-conference call to an available doctor.</p>
+      </div>
+    </div>
+    <div class="relative">
+      
+    </div>
+  </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
 </body>
